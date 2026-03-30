@@ -13,7 +13,8 @@ std::string User::getName() const { return name; }
 std::string User::getEmail() const { return email; }
 
 void User::display() const {
-  std::cout << "User ID: " << id << std::endl;
-  std::cout << "Name: " << name << std::endl;
-  std::cout << "Email: " << email << std::endl;
+  std::cout << "User ID: " << id
+            << ", Name: " << name
+            << ", Email: " << email
+            << std::endl;
 }
