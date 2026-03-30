@@ -2,7 +2,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -g
 TARGET = movie_app
-OBJS = main.o movie.o
+OBJS = main.o movie.o rating.o user.o
 
 $(TARGET): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
