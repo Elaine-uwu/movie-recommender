@@ -28,8 +28,8 @@ int main() {
     // 기생충: 4.9  (4.8 + 5.0) / 2
 
     User u1(1, "Jeong hwan hui", "jeong@example.com");
-    Rating r1(1, 1, 4.8);
-    Rating r2(1, 2, 6.0);
+    Rating r1(u1.getId(), movies[0].getId(), movies[0].getAverageRating());
+    Rating r2(u1.getId(), movies[1].getId(), 6.0);
 
     u1.display();
     r1.display();
